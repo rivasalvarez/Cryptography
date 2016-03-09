@@ -1,9 +1,8 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class Caesar {
 
 	public static void main(String[] args) {
-		@SuppressWarnings("resource")
 		Scanner fin = new Scanner(System.in);
 		int length;
 		String input;
@@ -12,6 +11,7 @@ public class Caesar {
 		//Ask User for Cypher Text and Read in
         System.out.println("Enter Cypher Text: ");
         input = fin.nextLine();
+        fin.close();
         charInput = input.toCharArray();
         
         //Decrypt
